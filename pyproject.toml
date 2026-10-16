@@ -1,0 +1,31 @@
+[build-system]
+# 77+ reads `license` as an SPDX expression and `license-files` (PEP 639).
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jev-strict"
+version = "0.1.0"
+description = "An unofficial, strict client for TypeSafe's Jev evaluation API: a pinned model, a crash-safe usage meter, a hard monthly cap, and order-checked judgements."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "jev-strict contributors" }]
+keywords = ["jev", "typesafe", "llm-evaluation", "llm-judge", "position-bias", "usage-metering", "cost-cap"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Jubii100/jev-strict"
+Issues = "https://github.com/Jubii100/jev-strict/issues"
+
+[tool.setuptools.packages.find]
+include = ["jev_strict", "jev_strict.*"]

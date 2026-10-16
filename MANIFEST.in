@@ -1,0 +1,7 @@
+# The sdist carries what a reviewer needs to check a release: the tests, the provenance, the changelog and the CI
+# file. The wheel carries only the package (pyproject.toml).
+include CHANGELOG.md LICENSE README.md PROVENANCE.md .gitignore
+graft tests
+graft .github
+global-exclude __pycache__ *.py[co]
+prune .pytest_cache
